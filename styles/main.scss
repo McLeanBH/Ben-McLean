@@ -106,9 +106,9 @@ p {
     }
 }
 
-/* //////////////////////
-// MAIN-CONTENT SECTIONS
-////////////////////// */
+/* ////////////////////////////////////////
+// MAIN-CONTENT NON-SECTION-SPECIFIC
+//////////////////////////////////////// */
 
 .main-container {
     min-height: 1600px;
@@ -119,7 +119,8 @@ p {
 }
 
 #section-one {
-    background-color: $dark-green;
+    background: url('../img/slopes.jpg') center center no-repeat;
+    background-size: cover;
 
     .s1p1 {
         padding-top: 150px;
@@ -140,4 +141,41 @@ p {
     .s3p1 {
         padding-top: 50px;
     }
+}
+
+#section-four {
+    background-color: $light-blue;
+
+    .s4p1 {
+        padding-top: 50px;
+    }
+}
+
+h1 {
+    margin: 0;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+/* //////////////////////
+// CONTACT-SECTION
+////////////////////// */
+
+.contact-list {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-item {
+    display: inline-block;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
 }
