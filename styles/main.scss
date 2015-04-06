@@ -76,7 +76,9 @@ p {
     right: 0;
     left: 0;
     height: 90px;
-    background-color: $light-yellow;
+    background-color: $lust;
+    // background: url('../img/concrete.jpg') center center no-repeat;
+    // background-size: cover;
 }
 
 .header-left,
@@ -121,6 +123,7 @@ p {
 #section-one {
     background: url('../img/slopes.jpg') center center no-repeat;
     background-size: cover;
+    color: #fff;
 
     .s1p1 {
         padding-top: 150px;
@@ -128,7 +131,9 @@ p {
 }
 
 #section-two {
-    background-color: $lust;
+    background: url('../img/programming.jpg') center center no-repeat;
+    background-size: cover;
+    color: #000;
 
     .s2p1 {
         padding-top: 50px;
@@ -136,7 +141,9 @@ p {
 }
 
 #section-three {
-    background-color: $paris-daisy;
+    background: url('../img/tunnel.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fff;
 
     .s3p1 {
         padding-top: 50px;
@@ -144,7 +151,9 @@ p {
 }
 
 #section-four {
-    background-color: $light-blue;
+    background: url('../img/foggy-road.jpg') center center no-repeat;
+    background-size: cover;
+    color: #000;
 
     .s4p1 {
         padding-top: 50px;
@@ -155,6 +164,27 @@ h1 {
     margin: 0;
     padding-top: 16px;
     padding-left: 16px;
+}
+
+
+#section-five {
+    background: url('../img/night-lights.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#section-six {
+    background: url('../img/dew.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#section-seven {
+    background: url('../img/window.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#section-eight {
+    background: url('../img/computing.jpg') center center no-repeat;
+    background-size: cover;
 }
 
 /* //////////////////////

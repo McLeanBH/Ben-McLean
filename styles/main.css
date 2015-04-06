@@ -54,7 +54,7 @@ p {
   right: 0;
   left: 0;
   height: 90px;
-  background-color: #fff195; }
+  background-color: #fa2e22; }
 
 .header-left,
 .header-right {
@@ -88,22 +88,29 @@ p {
 
 #section-one {
   background: url("../img/slopes.jpg") center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  color: #fff; }
   #section-one .s1p1 {
     padding-top: 150px; }
 
 #section-two {
-  background-color: #fa2e22; }
+  background: url("../img/programming.jpg") center center no-repeat;
+  background-size: cover;
+  color: #000; }
   #section-two .s2p1 {
     padding-top: 50px; }
 
 #section-three {
-  background-color: #ffe84f; }
+  background: url("../img/tunnel.jpg") center center no-repeat;
+  background-size: cover;
+  color: #fff; }
   #section-three .s3p1 {
     padding-top: 50px; }
 
 #section-four {
-  background-color: #6c97f9; }
+  background: url("../img/foggy-road.jpg") center center no-repeat;
+  background-size: cover;
+  color: #000; }
   #section-four .s4p1 {
     padding-top: 50px; }
 
@@ -111,6 +118,22 @@ h1 {
   margin: 0;
   padding-top: 16px;
   padding-left: 16px; }
+
+#section-five {
+  background: url("../img/night-lights.jpg") center center no-repeat;
+  background-size: cover; }
+
+#section-six {
+  background: url("../img/dew.jpg") center center no-repeat;
+  background-size: cover; }
+
+#section-seven {
+  background: url("../img/window.jpg") center center no-repeat;
+  background-size: cover; }
+
+#section-eight {
+  background: url("../img/computing.jpg") center center no-repeat;
+  background-size: cover; }
 
 /* //////////////////////
 // CONTACT-SECTION
