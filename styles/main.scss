@@ -66,19 +66,32 @@ p {
     margin: 0;
 }
 
+body {
+    margin-top: 100px;
+}
+
 /* //////////////////////
 // VEGAS PHOTO WELCOME 
 ////////////////////// */
 
-.vegas-container {
-  height: 2000px;
+
+#section-zero::after {
+  display: block;
   position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+  content: '';
+}
+
+.vegas-container {
   bottom: 2em;
   right: 2em;
 }
 
 .vegas-overlay {
-  opacity: .2;
+  opacity: .6;
 }
 
 .vegas-timer-progress {
@@ -107,9 +120,8 @@ p {
     right: 0;
     left: 0;
     height: 90px;
-    background-color: $lust;
-    // background: url('../img/concrete.jpg') center center no-repeat;
-    // background-size: cover;
+    background-color: #383b42;
+    z-index: 3;
 }
 
 .header-left,
@@ -129,13 +141,15 @@ p {
 }
 
 .header-nav-items {
+            padding-top: 20px;
+
     display: inline-block;
     padding-left: 40px;
     cursor: pointer;
 
     a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
     }
 }
 
@@ -148,75 +162,62 @@ p {
 }
 
 .section {
-    height: 600px;
+    height: 1000px;
 }
 
 #section-one {
-    background: url('../img/slopes.jpg') center center no-repeat;
-    background-size: cover;
-    color: #fff;
+    // background: url('../img/slopes.jpg') center center no-repeat;
+    // background-size: cover;
 
     .s1p1 {
-        padding-top: 150px;
+        padding-top: 40px;
+        line-height: 2;
     }
 }
 
 #section-two {
-    background: url('../img/programming.jpg') center center no-repeat;
-    background-size: cover;
-    color: #000;
-
-    .s2p1 {
-        padding-top: 50px;
-    }
+    // background: url('../img/programming.jpg') center center no-repeat;
+    // background-size: cover;
 }
 
 #section-three {
-    background: url('../img/tunnel.jpg') center center no-repeat;
-    background-size: cover;
-    color: #fff;
-
-    .s3p1 {
-        padding-top: 50px;
-    }
+    // background: url('../img/tunnel.jpg') center center no-repeat;
+    // background-size: cover;
 }
 
 #section-four {
-    background: url('../img/foggy-road.jpg') center center no-repeat;
-    background-size: cover;
-    color: #000;
-
-    .s4p1 {
-        padding-top: 50px;
-    }
+    // background: url('../img/foggy-road.jpg') center center no-repeat;
+    // background-size: cover;
 }
 
-h1 {
-    margin: 0;
-    padding-top: 16px;
-    padding-left: 16px;
+h1, 
+p {
+    margin: 0 auto;
+    text-align: center;
+    color: #000;
+    font-weight: 800;
 }
 
 
 #section-five {
-    background: url('../img/night-lights.jpg') center center no-repeat;
-    background-size: cover;
+    // background: url('../img/night-lights.jpg') center center no-repeat;
+    // background-size: cover;
 }
 
 #section-six {
-    background: url('../img/dew.jpg') center center no-repeat;
-    background-size: cover;
+    // background: url('../img/dew.jpg') center center no-repeat;
+    // background-size: cover;
 }
 
 #section-seven {
-    background: url('../img/window.jpg') center center no-repeat;
-    background-size: cover;
+    // background: url('../img/window.jpg') center center no-repeat;
+    // background-size: cover;
     height: 1200px;
 }
 
 #section-eight {
-    background: url('../img/computing.jpg') center center no-repeat;
-    background-size: cover;
+    // background: url('../img/computing.jpg') center center no-repeat;
+    // background-size: cover;
 }
 
 /* //////////////////////
@@ -231,6 +232,7 @@ h1 {
 
 .contact-item {
     display: inline-block;
+    padding-top: 20px;
     cursor: pointer;
     width: 45px;
     height: 45px;
@@ -240,4 +242,30 @@ h1 {
     display: inline-block;
     width: 45px;
     height: 45px;
+    text-shadow: 1px 1px 10px #333;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    margin: 0 auto;
+    padding-top: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 36px;
+    text-shadow: 1px 1px 10px #333;
+    position: relative;
+    z-index: 10;
+}
+
+p {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+    text-shadow: 5px 5px 20px #333;
+    position: relative;
+    z-index: 10;
 }
