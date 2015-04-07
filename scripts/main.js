@@ -1,10 +1,10 @@
 $('body').vegas({
   overlay: true,
   transition: 'fade', 
-  transitionDuration: 1000,
-  delay: 4000,
+  transitionDuration: 5000,
+  delay: 6000,
   animation: 'random',
-  animationDuration: 2000,
+  animationDuration: 10000,
   slides: [
     { src: 'img/pond.jpg' },
     { src: 'img/greens.jpg' },
