@@ -129,7 +129,7 @@ body {
     left: 0;
     height: 90px;
     background-color: #465664;
-    z-index: 3;
+    z-index: 10000000000;
     border-bottom: 5px solid #fff;
 }
 
@@ -143,7 +143,13 @@ body {
 
 .header-left {
     width: 55%;
-    color: #3B92FC;
+    color: #0088FF;
+
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
 }
 
 .header-nav-list {
@@ -183,11 +189,6 @@ body {
 
     .section-one-content {
         padding-top: 15%;
-    }
-
-    .s1p1 {
-        padding-top: 40px;
-        line-height: 2;
     }
 }
 
@@ -283,14 +284,88 @@ p {
     color: #fff;
     font-weight: 800;
     font-size: 24px;
-    text-shadow: 5px 5px 20px #333;
+    
     position: relative;
     z-index: 10;
 }
 
-.main-contact-container,
-.main-about-container {
+.main-contact-container {
   background-color: #465664;
   min-height: 1000px;
 }
 
+.main-about-container {
+  background-color: #465664;
+}
+
+#section-two {
+  background-color: #465664;
+  min-height: 1000px;
+  background: url('../img/wiring.jpg') center center no-repeat;
+  background-size: contain;
+}
+
+.s1p1 {
+        padding-top: 40px;
+        line-height: 2;
+    }
+
+.s2p1,
+.s2p2,
+.s2p3,
+.s2p4 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 8px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+
+.about-header {
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 30px;
+  color: #000;
+  font-size: 48px;
+}
+
+.paras {
+  margin: 0 auto;
+  max-width: 1016px;
+  background-color: #465664;
+  border: 8px solid #000;
+  border-radius: 12%;
+  margin-top: 100px;
+  padding: 12px;
+}
+
+.two-way-image-wrapper {
+  margin: 0 auto;
+  width: 820px;
+  padding-top: 45px;
+}
+
+.contact-image-left {
+  display: inline-block;
+  
+  img {
+    border: 2px solid #000;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.contact-image-right {
+  display: inline-block;
+
+  img {
+    border: 2px solid #000;
+    width: 400px;
+    height: 400px;
+  } 
+}
