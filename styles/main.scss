@@ -1,5 +1,5 @@
 @import 'bourbon/bourbon';
-$visual-grid: false;
+$visual-grid: true;
 $gutter: em(24px);
 @import 'neat/neat';
 
@@ -339,7 +339,7 @@ p {
   max-width: 1016px;
   background-color: #465664;
   border: 8px solid #000;
-  border-radius: 12%;
+  border-radius: 2%;
   margin-top: 100px;
   padding: 12px;
 }
@@ -368,4 +368,31 @@ p {
     width: 400px;
     height: 400px;
   } 
+}
+
+.piece {
+  display: inline-block;
+  text-decoration: none;
+
+  img {
+    width: 320px;
+    height: 320px;
+  }
+
+}
+
+.work-port {
+  list-style: none;
+  padding-top: 75px;
+  padding-left: 20px;
+  margin-top: 50px;
+
+  h2 {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.work {
+  cursor: pointer;
 }
