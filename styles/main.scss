@@ -1,5 +1,5 @@
 @import 'bourbon/bourbon';
-$visual-grid: true;
+$visual-grid: false;
 $gutter: em(24px);
 @import 'neat/neat';
 
@@ -370,6 +370,14 @@ p {
   } 
 }
 
+.pieces {
+  padding-top: 60px;
+  margin: 0 auto;
+  margin-top: 65px;
+  width: 100%;
+
+}
+
 .piece {
   display: inline-block;
   text-decoration: none;
@@ -384,7 +392,6 @@ p {
 .work-port {
   list-style: none;
   padding-top: 75px;
-  padding-left: 20px;
   margin-top: 50px;
 
   h2 {
