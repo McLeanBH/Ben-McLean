@@ -46,6 +46,28 @@ p {
   margin: 0; }
 
 /* //////////////////////
+// VEGAS PHOTO WELCOME 
+////////////////////// */
+.vegas-container {
+  height: 2000px;
+  position: absolute;
+  bottom: 2em;
+  right: 2em; }
+
+.vegas-overlay {
+  opacity: .2; }
+
+.vegas-timer-progress {
+  background: #fff; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.8); } }
+/* //////////////////////
 // HEADER
 ////////////////////// */
 .header {
