@@ -8,25 +8,6 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-body:before {
-  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 6.29114%, transparent 6.29114%, transparent 8.51899%, #eee 8.51899%, #eee 14.81013%, transparent 14.81013%, transparent 17.03797%, #eee 17.03797%, #eee 23.32912%, transparent 23.32912%, transparent 25.55696%, #eee 25.55696%, #eee 31.8481%, transparent 31.8481%, transparent 34.07595%, #eee 34.07595%, #eee 40.36709%, transparent 40.36709%, transparent 42.59494%, #eee 42.59494%, #eee 48.88608%, transparent 48.88608%, transparent 51.11392%, #eee 51.11392%, #eee 57.40506%, transparent 57.40506%, transparent 59.63291%, #eee 59.63291%, #eee 65.92405%, transparent 65.92405%, transparent 68.1519%, #eee 68.1519%, #eee 74.44304%, transparent 74.44304%, transparent 76.67088%, #eee 76.67088%, #eee 82.96203%, transparent 82.96203%, transparent 85.18987%, #eee 85.18987%, #eee 91.48101%, transparent 91.48101%, transparent 93.70886%, #eee 93.70886%, #eee 100.0%, transparent 100.0%);
-  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 6.29114%, transparent 6.29114%, transparent 8.51899%, #eee 8.51899%, #eee 14.81013%, transparent 14.81013%, transparent 17.03797%, #eee 17.03797%, #eee 23.32912%, transparent 23.32912%, transparent 25.55696%, #eee 25.55696%, #eee 31.8481%, transparent 31.8481%, transparent 34.07595%, #eee 34.07595%, #eee 40.36709%, transparent 40.36709%, transparent 42.59494%, #eee 42.59494%, #eee 48.88608%, transparent 48.88608%, transparent 51.11392%, #eee 51.11392%, #eee 57.40506%, transparent 57.40506%, transparent 59.63291%, #eee 59.63291%, #eee 65.92405%, transparent 65.92405%, transparent 68.1519%, #eee 68.1519%, #eee 74.44304%, transparent 74.44304%, transparent 76.67088%, #eee 76.67088%, #eee 82.96203%, transparent 82.96203%, transparent 85.18987%, #eee 85.18987%, #eee 91.48101%, transparent 91.48101%, transparent 93.70886%, #eee 93.70886%, #eee 100.0%, transparent 100.0%);
-  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 6.29114%, transparent 6.29114%, transparent 8.51899%, #eee 8.51899%, #eee 14.81013%, transparent 14.81013%, transparent 17.03797%, #eee 17.03797%, #eee 23.32912%, transparent 23.32912%, transparent 25.55696%, #eee 25.55696%, #eee 31.8481%, transparent 31.8481%, transparent 34.07595%, #eee 34.07595%, #eee 40.36709%, transparent 40.36709%, transparent 42.59494%, #eee 42.59494%, #eee 48.88608%, transparent 48.88608%, transparent 51.11392%, #eee 51.11392%, #eee 57.40506%, transparent 57.40506%, transparent 59.63291%, #eee 59.63291%, #eee 65.92405%, transparent 65.92405%, transparent 68.1519%, #eee 68.1519%, #eee 74.44304%, transparent 74.44304%, transparent 76.67088%, #eee 76.67088%, #eee 82.96203%, transparent 82.96203%, transparent 85.18987%, #eee 85.18987%, #eee 91.48101%, transparent 91.48101%, transparent 93.70886%, #eee 93.70886%, #eee 100.0%, transparent 100.0%);
-  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 6.29114%, transparent 6.29114%, transparent 8.51899%, #eee 8.51899%, #eee 14.81013%, transparent 14.81013%, transparent 17.03797%, #eee 17.03797%, #eee 23.32912%, transparent 23.32912%, transparent 25.55696%, #eee 25.55696%, #eee 31.8481%, transparent 31.8481%, transparent 34.07595%, #eee 34.07595%, #eee 40.36709%, transparent 40.36709%, transparent 42.59494%, #eee 42.59494%, #eee 48.88608%, transparent 48.88608%, transparent 51.11392%, #eee 51.11392%, #eee 57.40506%, transparent 57.40506%, transparent 59.63291%, #eee 59.63291%, #eee 65.92405%, transparent 65.92405%, transparent 68.1519%, #eee 68.1519%, #eee 74.44304%, transparent 74.44304%, transparent 76.67088%, #eee 76.67088%, #eee 82.96203%, transparent 82.96203%, transparent 85.18987%, #eee 85.18987%, #eee 91.48101%, transparent 91.48101%, transparent 93.70886%, #eee 93.70886%, #eee 100.0%, transparent 100.0%);
-  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 6.29114%, transparent 6.29114%, transparent 8.51899%, #eee 8.51899%, #eee 14.81013%, transparent 14.81013%, transparent 17.03797%, #eee 17.03797%, #eee 23.32912%, transparent 23.32912%, transparent 25.55696%, #eee 25.55696%, #eee 31.8481%, transparent 31.8481%, transparent 34.07595%, #eee 34.07595%, #eee 40.36709%, transparent 40.36709%, transparent 42.59494%, #eee 42.59494%, #eee 48.88608%, transparent 48.88608%, transparent 51.11392%, #eee 51.11392%, #eee 57.40506%, transparent 57.40506%, transparent 59.63291%, #eee 59.63291%, #eee 65.92405%, transparent 65.92405%, transparent 68.1519%, #eee 68.1519%, #eee 74.44304%, transparent 74.44304%, transparent 76.67088%, #eee 76.67088%, #eee 82.96203%, transparent 82.96203%, transparent 85.18987%, #eee 85.18987%, #eee 91.48101%, transparent 91.48101%, transparent 93.70886%, #eee 93.70886%, #eee 100.0%, transparent 100.0%);
-  content: "";
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  margin: 0 auto;
-  max-width: 68em;
-  opacity: 0.4;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  width: 100%;
-  z-index: -1; }
-
 /* //////////////////////
 // FONTS
 ////////////////////// */
@@ -39,14 +20,20 @@ body:before {
 html {
   box-sizing: border-box; }
 
-*, *::after, *::before {
-  box-sizing: inherit; }
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 p {
   margin: 0; }
 
 body {
-  margin-top: 100px; }
+  color: #dbdbdb;
+  font-weight: 400;
+  font-size: 1em;
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 100px;
+  background-color: #fff; }
 
 /* //////////////////////
 // VEGAS PHOTO WELCOME 
@@ -86,8 +73,9 @@ body {
   right: 0;
   left: 0;
   height: 90px;
-  background-color: #383b42;
-  z-index: 3; }
+  background-color: #465664;
+  z-index: 3;
+  border-bottom: 5px solid #fff; }
 
 .header-left,
 .header-right {
@@ -97,7 +85,8 @@ body {
   margin-left: 50px; }
 
 .header-left {
-  width: 55%; }
+  width: 55%;
+  color: #3B92FC; }
 
 .header-nav-list {
   list-style: none; }
@@ -115,14 +104,31 @@ body {
 // MAIN-CONTENT NON-SECTION-SPECIFIC
 //////////////////////////////////////// */
 .main-container {
-  min-height: 1600px; }
+  min-height: 1000px; }
 
 .section {
-  height: 1000px; }
+  height: 450px; }
 
-#section-one .s1p1 {
-  padding-top: 40px;
-  line-height: 2; }
+#section-one {
+  background: url("../img/slopes.jpg") center center no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-color: #465664; }
+  #section-one .section-one-content {
+    padding-top: 15%; }
+  #section-one .s1p1 {
+    padding-top: 40px;
+    line-height: 2; }
+
+#section-two {
+  background-color: #465664; }
+
+#section-three {
+  background-color: #465664;
+  height: 900px; }
+
+#section-four {
+  background-color: #465664; }
 
 h1,
 p {
@@ -131,8 +137,21 @@ p {
   color: #000;
   font-weight: 800; }
 
-#section-seven {
-  height: 1200px; }
+#section-five {
+  background: url("../img/golf.jpg") center center no-repeat;
+  background-size: cover;
+  background-color: #465664;
+  height: 550px;
+  border-top: 5px solid #000; }
+
+#section-five::after {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  content: ''; }
 
 /* //////////////////////
 // CONTACT-SECTION
@@ -177,5 +196,10 @@ p {
   text-shadow: 5px 5px 20px #333;
   position: relative;
   z-index: 10; }
+
+.main-contact-container,
+.main-about-container {
+  background-color: #465664;
+  min-height: 1000px; }
 
 /*# sourceMappingURL=main.css.map */
