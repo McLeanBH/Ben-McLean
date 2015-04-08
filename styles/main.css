@@ -14,6 +14,13 @@ html {
 /* //////////////////////
 // COLORS
 ////////////////////// */
+/* /////////////////////////////////////
+// MEDIA QUERIES / BREAKPOINTS
+///////////////////////////////////// */
+/* //////////////////////
+// MIXINS
+////////////////////// */
+/* //  <---  MIXIN FOR PORTFOLIO-WORK-DESCRIPTIONS  --->  // */
 /* //////////////////////
 // GENERAL DOC STYLING
 ////////////////////// */
@@ -28,16 +35,18 @@ p {
   margin: 0; }
 
 body {
+  margin: 0;
+  margin-top: 100px;
+  padding: 0;
+  background-color: #465664;
   color: #dbdbdb;
   font-weight: 400;
   font-size: 1em;
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
-  margin-top: 100px;
-  background-color: #fff; }
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif; }
 
-/* //////////////////////
-// VEGAS PHOTO WELCOME 
-////////////////////// */
+/* /////////////////////////////////
+// VEGAS PHOTO WELCOME GALLERY 
+///////////////////////////////// */
 #section-zero::after {
   display: block;
   position: absolute;
@@ -77,8 +86,7 @@ body {
   z-index: 10000000000;
   border-bottom: 5px solid #fff; }
 
-.header-left,
-.header-right {
+.header-left, .header-right {
   display: inline-block;
   width: 35%;
   vertical-align: middle;
@@ -105,7 +113,7 @@ body {
     color: #fff; }
 
 /* ////////////////////////////////////////
-// MAIN-CONTENT NON-SECTION-SPECIFIC
+// MAIN-CONTENT (HOME PAGE)
 //////////////////////////////////////// */
 .main-container {
   min-height: 1000px; }
@@ -129,30 +137,14 @@ body {
   height: 900px; }
 
 #section-four {
-  background-color: #465664; }
+  background-color: #465664;
+  height: 400px; }
 
-h1,
-p {
+h1, p {
   margin: 0 auto;
   text-align: center;
   color: #000;
   font-weight: 800; }
-
-#section-five {
-  background: url("../img/golf.jpg") center center no-repeat;
-  background-size: cover;
-  background-color: #465664;
-  height: 550px;
-  border-top: 5px solid #000; }
-
-#section-five::after {
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  content: ''; }
 
 /* //////////////////////
 // CONTACT-SECTION
@@ -177,6 +169,10 @@ p {
   position: relative;
   z-index: 10; }
 
+.social-icon:hover {
+  transition: transform 0.9s ease-out;
+  transform: rotate(360deg); }
+
 h1 {
   margin: 0 auto;
   padding-top: 25px;
@@ -199,8 +195,11 @@ p {
 
 .main-contact-container {
   background-color: #465664;
-  min-height: 1000px; }
+  height: 400px; }
 
+/* //////////////////////
+// ABOUT PAGE
+////////////////////// */
 .main-about-container {
   background-color: #465664; }
 
@@ -245,6 +244,9 @@ p {
   margin-top: 100px;
   padding: 12px; }
 
+/* //////////////////////
+// CONTACT PAGE
+////////////////////// */
 .two-way-image-wrapper {
   margin: 0 auto;
   width: 820px;
@@ -264,6 +266,9 @@ p {
     width: 400px;
     height: 400px; }
 
+/* /////////////////////////
+// PORTFOLIO OF WORK
+///////////////////////// */
 .pieces {
   padding-top: 60px;
   margin: 0 auto;
@@ -287,5 +292,20 @@ p {
 
 .work {
   cursor: pointer; }
+
+/* /////////////////////////
+// DIGITAL PLAYGROUND
+///////////////////////// */
+.honk-title {
+  vertical-align: middle; }
+
+.honk-desc {
+  font-size: 12px; }
+
+.ember-todo-title {
+  vertical-align: top; }
+
+.ember-todo-desc {
+  font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map */

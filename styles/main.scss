@@ -7,6 +7,8 @@ $gutter: em(24px);
 // FONTS
 ////////////////////// */
 
+$body-font: 'Helvetica', sans-serif;
+$heading-font: 'Lucida Grande', serif;
 $primary-header-font: 'Orbitron', sans-serif;
 $secondary-header-font: 'Francois One', sans-serif;
 $primary-body-font: 'Open Sans', sans-serif;
@@ -21,20 +23,19 @@ $yet-another-font: 'Oswald', sans-serif;
 // COLORS
 ////////////////////// */
 
-$down-river: rgb(8, 38, 88);
-$governor-bay: rgb(47, 60, 185);
-$cornflower-blue: rgb(108, 151, 249);
-$supernova: rgb(253, 180, 44);
-$paris-daisy: rgb(255, 232, 79);
-$milan: rgb(255, 241, 149);
-$cornell-red: rgb(188, 31, 27);
-$lust: rgb(250, 46, 34);
-$pastel-red: rgb(255, 105, 101);
-$north-texas-green: rgb(0, 141, 33);
-$dark-pastel-green: rgb(6, 189, 47);
-$mantis: rgb(105, 214, 101);
-
-$royal-blue: rgb(76, 88, 223);
+$down-river: rgb(8, 38, 88); // #082658
+$governor-bay: rgb(47, 60, 185); // #2F3CB9
+$cornflower-blue: rgb(108, 151, 249); // #6C97F9
+$supernova: rgb(253, 180, 44); // #FDB42C
+$paris-daisy: rgb(255, 232, 79); // #FFE84F
+$milan: rgb(255, 241, 149); // #FFF195
+$cornell-red: rgb(188, 31, 27); // #BC1F1B
+$lust: rgb(250, 46, 34); // #FA2E22
+$pastel-red: rgb(255, 105, 101); // #FF6965
+$north-texas-green: rgb(0, 141, 33); // #008D21
+$dark-pastel-green: rgb(6, 189, 47); // #06BD2F
+$mantis: rgb(105, 214, 101); // #69D665
+$royal-blue: rgb(76, 88, 223); // #4C58DF
 $dark-blue: $down-river;
 $medium-blue: $governor-bay;
 $light-blue: $cornflower-blue;
@@ -47,10 +48,141 @@ $light-red: $pastel-red;
 $dark-green: $north-texas-green;
 $medium-green: $dark-pastel-green;
 $light-green: $mantis;
+// colors from surf and paddle (some nice blues and grays)
+$prussian-blue: rgba(0, 51, 83, 1); // #003353
+$french-blue: rgba(0, 105, 182, 1); // #0069B6
+$shuttle-gray: rgba(92, 104, 112, 1); // #5C6870
+$gull-gray: rgba(160, 179, 192, 1); // #A0B3C0
+$primary-color: $prussian-blue;
+$primary-accent-color: $french-blue;
+$secondary-color: $shuttle-gray;
+$secondary-accent-color: $gull-gray;
+
+/* /////////////////////////////////////
+// MEDIA QUERIES / BREAKPOINTS
+///////////////////////////////////// */
+
+// @function new-breakpoint($query, $total-columns: $grid-columns) { 
+// }
+
+// (Example below, need to adjust accordingly)
+$mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(min-width 480px 4) and (max-width 800px 6);
+
+// .element {
+//   @include media($tablet) {
+//     @include span-columns(6);
+//   }
+// }
+
+// @media screen (min-width: 480px) and (max-width: 800px) {
+//   .element {
+//     display: block;
+//     float: left;
+//     margin-right: 7.42297%;
+//     width: 100%;
+//   }
+//   .element:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+//   @include media($mobile) {
+//     @include span-columns(4);
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   .element {
+//     display: block;
+//     float: left;
+//     margin-right: 7.42297%;
+//     width: 100%;
+//   }
+//   .element:last-child {
+//     margin-right: 0;
+//   }
+// }
+
+/* //////////////////////
+// MIXINS
+////////////////////// */
+
+@mixin transluscent-background($color, $duration: 300ms) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparentize($color, .5);
+    transition: background-color $duration;
+  }
+
+  &:hover::after {
+    background-color: transparent;
+  }
+}
+
+/* //  <---  MIXIN FOR PORTFOLIO-WORK-DESCRIPTIONS  --->  // */
+@mixin fill-parent() {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: text-top;
+  color: #000;
+  font-family: $secondary-body-font;
+}
+
+// --> Example from SNP of hover effects and transparent overlay on 'posts photos'
+
+// .one:hover .pic-titles {
+//   color: #FFF;
+//   text-shadow: 1px 1px 10px #555;
+// }
+
+// .one::after {
+//   content: "";
+//   display: inline-block;
+//   position: absolute;
+//   top:0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   background: rgba(38, 115, 172, 0.5);
+//   transition: 500ms;
+// }
+
+// .one:hover::after {
+//   content: "";
+//   display: inline-block;
+//   position: absolute;
+//   top:0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
+//   background: transparent;
+// }
 
 /* //////////////////////
 // GENERAL DOC STYLING
 ////////////////////// */
+
+// $header-height: 522px;
+// $content-height: 1006px;
+// $posts-header-height: 146px;
+// $posts-height: 332px;
+// $footer-height: 96px;
+
+// $content-width: 978px;
+// $article-width: 617px;
 
 $border-box-sizing: true !default;
 
@@ -63,24 +195,25 @@ html {
   box-sizing: border-box;
 }
 
-
 p {
     margin: 0;
 }
 
 body {
+  margin: 0;
+  margin-top: 100px;
+  padding: 0;
+  background-color: #465664;
   color: #dbdbdb;
   font-weight: 400;
   font-size: 1em;
   font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
-  margin-top: 100px;
-  background-color: #fff;
 }
 
 
-/* //////////////////////
-// VEGAS PHOTO WELCOME 
-////////////////////// */
+/* /////////////////////////////////
+// VEGAS PHOTO WELCOME GALLERY 
+///////////////////////////////// */
 
 
 #section-zero::after {
@@ -133,8 +266,7 @@ body {
     border-bottom: 5px solid #fff;
 }
 
-.header-left,
-.header-right {
+.header-left,.header-right {
     display: inline-block;
     width: 35%;
     vertical-align: middle;
@@ -170,7 +302,7 @@ body {
 }
 
 /* ////////////////////////////////////////
-// MAIN-CONTENT NON-SECTION-SPECIFIC
+// MAIN-CONTENT (HOME PAGE)
 //////////////////////////////////////// */
 
 .main-container {
@@ -193,50 +325,43 @@ body {
 }
 
 #section-two {
-    // background: url('../img/programming.jpg') center center no-repeat;
-    // background-size: cover;
     background-color: #465664;
 }
 
 #section-three {
-    // background: url('../img/tunnel.jpg') center center no-repeat;
-    // background-size: cover;
     background-color: #465664;
     height: 900px;
 }
 
 #section-four {
-    // background: url('../img/foggy-road.jpg') center center no-repeat;
-    // background-size: cover;
     background-color: #465664;
+    height: 400px;
 }
 
-h1, 
-p {
+h1, p {
     margin: 0 auto;
     text-align: center;
     color: #000;
     font-weight: 800;
 }
 
+// #section-five {
+//     background: url('../img/golf.jpg') center center no-repeat;
+//     background-size: cover;
+//     background-color: #465664;
+//     height: 550px;
+//     border-top: 5px solid #000;
+// }
 
-#section-five {
-    background: url('../img/golf.jpg') center center no-repeat;
-    background-size: cover;
-    background-color: #465664;
-    height: 550px;
-    border-top: 5px solid #000;
-}
-
-#section-five::after {
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, .9);
-  content: '';
-}
+// #section-five::after {
+//   display: block;
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-color: rgba(0, 0, 0, .9);
+//   content: '';
+// }
 
 
 /* //////////////////////
@@ -266,6 +391,11 @@ p {
     z-index: 10;
 }
 
+.social-icon:hover {
+  transition: transform 0.9s ease-out;
+  transform: rotate(360deg);
+}
+
 h1 {
     margin: 0 auto;
     padding-top: 25px;
@@ -284,15 +414,20 @@ p {
     color: #fff;
     font-weight: 800;
     font-size: 24px;
-    
     position: relative;
     z-index: 10;
 }
 
 .main-contact-container {
   background-color: #465664;
-  min-height: 1000px;
+  height: 400px;
 }
+
+
+/* //////////////////////
+// ABOUT PAGE
+////////////////////// */
+
 
 .main-about-container {
   background-color: #465664;
@@ -306,9 +441,9 @@ p {
 }
 
 .s1p1 {
-        padding-top: 40px;
-        line-height: 2;
-    }
+  padding-top: 40px;
+  line-height: 2;
+}
 
 .s2p1,
 .s2p2,
@@ -344,14 +479,18 @@ p {
   padding: 12px;
 }
 
+/* //////////////////////
+// CONTACT PAGE
+////////////////////// */
+
 .two-way-image-wrapper {
-  margin: 0 auto;
-  width: 820px;
-  padding-top: 45px;
+   margin: 0 auto;
+   width: 820px;
+   padding-top: 45px;
 }
 
 .contact-image-left {
-  display: inline-block;
+   display: inline-block;
   
   img {
     border: 2px solid #000;
@@ -361,14 +500,18 @@ p {
 }
 
 .contact-image-right {
-  display: inline-block;
+   display: inline-block;
 
-  img {
-    border: 2px solid #000;
-    width: 400px;
-    height: 400px;
-  } 
+   img {
+     border: 2px solid #000;
+     width: 400px;
+     height: 400px;
+   } 
 }
+
+/* /////////////////////////
+// PORTFOLIO OF WORK
+///////////////////////// */
 
 .pieces {
   padding-top: 60px;
@@ -403,3 +546,24 @@ p {
 .work {
   cursor: pointer;
 }
+
+/* /////////////////////////
+// DIGITAL PLAYGROUND
+///////////////////////// */
+
+.honk-title {
+  vertical-align: middle;
+}
+
+.honk-desc {
+  font-size: 12px;
+}
+
+.ember-todo-title {
+  vertical-align: top;
+}
+
+.ember-todo-desc {
+  font-size: 12px;
+}
+
