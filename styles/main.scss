@@ -23,6 +23,20 @@ $yet-another-font: 'Oswald', sans-serif;
 // COLORS
 ////////////////////// */
 
+$color1: #070707;
+$color2: #202020;
+$color3: #1d4057;
+$color4: #295c7e;
+$color5: #3579a5;
+
+// Scheme 2 black-blue fading
+$color1: #060d11;
+$color2: #132937;
+$color3: #1f465d;
+$color4: #2b6284;
+$color5: #377fac;
+
+
 $down-river: rgb(8, 38, 88); // #082658
 $governor-bay: rgb(47, 60, 185); // #2F3CB9
 $cornflower-blue: rgb(108, 151, 249); // #6C97F9
@@ -450,15 +464,14 @@ p {
 .s2p3,
 .s2p4 {
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   padding-top: 8px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   position: relative;
   z-index: 10;
-  color: #fff;
+  color: #465664;
+  line-height: 1.5;
 }
 
 .about-header {
@@ -471,12 +484,14 @@ p {
 
 .paras {
   margin: 0 auto;
-  max-width: 1016px;
-  background-color: #465664;
+  margin-top: 20px;
+  max-width: 300px;
+  background-color: #F6F6F6;
   border: 8px solid #000;
   border-radius: 2%;
   margin-top: 100px;
-  padding: 12px;
+  padding: 8px;
+  text-align: center;
 }
 
 /* //////////////////////
@@ -567,3 +582,11 @@ p {
   font-size: 12px;
 }
 
+*, p, span, a, li, div {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.25;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lucida Grande', serif;
+}
